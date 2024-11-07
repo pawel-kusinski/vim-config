@@ -22,6 +22,7 @@ call plug#end()
 
 nnoremap <C-p> :Files<Cr>
 nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-s> :w<CR>
 
 " use <tab> to trigger completion and navigate to the next complete item
 function! CheckBackspace() abort
