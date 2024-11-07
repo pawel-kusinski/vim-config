@@ -12,5 +12,10 @@ call plug#begin('~/.vim/plugged')
 
 " List your plugins here
 Plug 'preservim/nerdtree'         " Example: NERDTree plugin
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
+
+nnoremap <C-p> :Files<Cr>
+
