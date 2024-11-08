@@ -5,6 +5,7 @@ set expandtab      " Convert tabs to spaces
 set tabstop=4      " Number of spaces for a tab
 set shiftwidth=4   " Number of spaces for auto-indents
 set softtabstop=4  " Number of spaces for a manual tab press
+set colorcolumn=121
 
 " Plugins
 
