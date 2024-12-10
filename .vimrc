@@ -8,6 +8,10 @@ set softtabstop=4  " Number of spaces for a manual tab press
 set colorcolumn=121
 set spell
 
+" Colors
+colorscheme habamax
+syntax on
+
 " Plugins
 
 call plug#begin('~/.vim/plugged')
