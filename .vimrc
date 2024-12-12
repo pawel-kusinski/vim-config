@@ -8,10 +8,6 @@ set softtabstop=4  " Number of spaces for a manual tab press
 set colorcolumn=121
 set spell
 
-" Colors
-colorscheme habamax
-syntax on
-
 " Plugins
 
 call plug#begin('~/.vim/plugged')
@@ -29,4 +25,13 @@ call plug#end()
 nnoremap <C-p> :Files<Cr>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-s> :w<CR>
+
+" Colors
+if filereadable(expand("~/.vim/plugged/vim-code-dark/colors/codedark.vim"))
+    colorscheme codedark
+else
+    colorscheme default
+endif
+
+syntax on
 
