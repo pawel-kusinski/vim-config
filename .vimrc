@@ -1,4 +1,4 @@
-set number        " Enable line numbers
+set relativenumber " Enable line numbers
 
 " Tab settings
 set expandtab      " Convert tabs to spaces
