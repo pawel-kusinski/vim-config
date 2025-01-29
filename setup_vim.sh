@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Create directory for storing swap files
+mkdir -p ~/.vim/swap//
+
 # Get the directory of the current script (i.e., the location of the git repository)
 REPO_DIR="$(dirname "$(realpath "$0")")"
 
