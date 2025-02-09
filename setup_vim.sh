@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if ! command -v curl &> /dev/null; then
+    echo "Error: curl is not installed. Install curl and try again."
+    exit 1
+fi
+
 # Create directory for storing swap files
 mkdir -p ~/.vim/swap//
 
