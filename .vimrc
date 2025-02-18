@@ -7,7 +7,10 @@ set shiftwidth=4   " Number of spaces for auto-indents
 set softtabstop=4  " Number of spaces for a manual tab press
 
 set colorcolumn=121
+
+" Spell
 set spell
+set spellfile=~/.vim/spell/en.utf-8.add
 
 set directory=~/.vim/swap//
 

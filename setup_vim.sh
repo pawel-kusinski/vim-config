@@ -23,6 +23,11 @@ fi
 # Create symbolic link to the repository's .vimrc
 ln -s "$REPO_DIR/.vimrc" ~/.vimrc
 
+# Ensure the Vim spell directory exists
+mkdir -p ~/.vim/spell
+
+ln -sf "$REPO_DIR/spell/en.utf-8.add" ~/.vim/spell/en.utf-8.add
+
 # Open Vim, run the PlugInstall command to install all plugins listed in .vimrc,
 # and then automatically quit Vim once the installation is complete.
 vim +PlugInstall +qall
