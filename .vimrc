@@ -32,6 +32,9 @@ nnoremap <C-p> :Files<Cr>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-s> :w<CR>
 
+" Trim white spaces on save
+autocmd BufWritePre * %s/\s\+$//e
+
 " Colors
 if filereadable(expand("~/.vim/plugged/vim-code-dark/colors/codedark.vim"))
     colorscheme codedark
