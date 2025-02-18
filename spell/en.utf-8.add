@@ -4,3 +4,6 @@ stdlib
 Wifi
 GPIO
 src
+cyw43
+uf2
+gitignore
