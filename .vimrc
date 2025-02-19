@@ -29,6 +29,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tomasiser/vim-code-dark'
 Plug 'ervandew/supertab'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
