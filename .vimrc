@@ -14,6 +14,9 @@ set spellfile=~/.vim/spell/en.utf-8.add
 
 set directory=~/.vim/swap//
 
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+
 " Plugins
 
 call plug#begin('~/.vim/plugged')
