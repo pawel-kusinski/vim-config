@@ -5,6 +5,11 @@ if ! command -v curl &> /dev/null; then
     exit 1
 fi
 
+if ! command -v ag  &> /dev/null; then
+    echo "Error: silversearcher-ag (ag) is not installed. Install silversearcher-ag and try again."
+    exit 1
+fi
+
 # Create directory for storing swap files
 mkdir -p ~/.vim/swap//
 
