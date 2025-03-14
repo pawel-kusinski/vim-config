@@ -37,6 +37,7 @@ nnoremap <C-p> :Files<Cr>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-s> :w<CR>
 nnoremap <C-l> :Ag<CR>
+nnoremap <C-h> :set number! relativenumber!<CR>
 
 " Trim white spaces on save
 autocmd BufWritePre * %s/\s\+$//e
