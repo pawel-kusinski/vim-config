@@ -39,6 +39,16 @@ nnoremap <C-s> :w<CR>
 nnoremap <C-l> :Ag<CR>
 nnoremap <C-h> :set number! relativenumber!<CR>
 
+" Normal mode scrolling
+nnoremap <C-Down> <C-e> " Scroll down one line
+nnoremap <C-j> <C-e>    " Scroll down one line
+nnoremap <C-Up> <C-y>   " Scroll up one line
+nnoremap <C-k> <C-y>    " Scroll up one line
+
+" Insert mode scrolling
+inoremap <C-Up> <C-o><C-y>
+inoremap <C-Down> <C-o><C-e>
+
 " Trim white spaces on save
 autocmd BufWritePre * %s/\s\+$//e
 
