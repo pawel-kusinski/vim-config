@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Check for --no-dict flag
+for arg in "$@"; do
+    if [ "$arg" == "--no-dict" ]; then
+        SKIP_DICT=true
+        break
+    fi
+done
+
 if ! command -v curl &> /dev/null; then
     echo "Error: curl is not installed. Install curl and try again."
     exit 1
@@ -43,10 +51,11 @@ fi
 # Create symbolic link to the repository's .vimrc
 ln -s "$REPO_DIR/.vimrc" ~/.vimrc
 
-# Ensure the Vim spell directory exists
-mkdir -p ~/.vim/spell
-
-ln -sf "$REPO_DIR/spell/en.utf-8.add" ~/.vim/spell/en.utf-8.add
+if [ "$SKIP_DICT" = false ]; then
+    # Ensure the Vim spell directory exists
+    mkdir -p ~/.vim/spell
+    ln -sf "$REPO_DIR/spell/en.utf-8.add" ~/.vim/spell/en.utf-8.add
+fi
 
 # Open Vim, run the PlugInstall command to install all plugins listed in .vimrc,
 # and then automatically quit Vim once the installation is complete.
