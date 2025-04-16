@@ -10,6 +10,21 @@ if ! command -v ag  &> /dev/null; then
     exit 1
 fi
 
+# Check if universal-ctags is installed
+if ! command -v ctags >/dev/null 2>&1; then
+    echo "Error: 'ctags' (required by Tagbar plugin) is not installed."
+    echo "Please install universal-ctags before proceeding."
+    echo "See: https://github.com/universal-ctags/ctags"
+    exit 1
+fi
+
+# Check if it's universal-ctags and not the legacy one
+if ! ctags --version 2>&1 | grep -q 'Universal'; then
+    echo "Error: The installed 'ctags' is not Universal Ctags that is recommended by Tagbar plugin authors."
+    echo "Please install universal-ctags from https://github.com/universal-ctags/ctags"
+    exit 1
+fi
+
 # Create directory for storing swap files
 mkdir -p ~/.vim/swap//
 

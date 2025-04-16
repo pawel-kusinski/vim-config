@@ -30,11 +30,13 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tomasiser/vim-code-dark'
 Plug 'ervandew/supertab'
 Plug 'jiangmiao/auto-pairs'
+Plug 'preservim/tagbar'
 
 call plug#end()
 
 nnoremap <C-p> :Files<Cr>
 nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <F8> :TagbarToggle<CR>
 nnoremap <C-s> :w<CR>
 nnoremap <C-l> :Ag<CR>
 nnoremap <C-h> :set number! relativenumber!<CR>
