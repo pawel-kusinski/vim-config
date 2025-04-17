@@ -31,6 +31,7 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'ervandew/supertab'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/tagbar'
+Plug 'ludovicchabant/vim-gutentags'
 
 call plug#end()
 
