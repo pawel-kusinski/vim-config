@@ -42,6 +42,9 @@ nnoremap <C-s> :w<CR>
 nnoremap <C-l> :Ag<CR>
 nnoremap <C-h> :set number! relativenumber!<CR>
 
+" Gutentags config
+let g:gutentags_cache_dir = expand('~/.cache/tags')
+
 " Trim white spaces on save
 autocmd BufWritePre * %s/\s\+$//e
 
