@@ -13,3 +13,17 @@ Replace "foo" with "bar" across the whole file and ask for confirmation before e
 ```vim
 :%s/foo/bar/gc
 ```
+
+## Spell Checking
+Add good word to spellfile:
+```vim
+zg
+```
+Mark bad word and save in spellfile:
+```vim
+zw
+```
+Suggest corrections:
+```vim
+z=
+```
