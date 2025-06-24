@@ -22,7 +22,7 @@ set omnifunc=syntaxcomplete#Complete
 call plug#begin('~/.vim/plugged')
 
 " List your plugins here
-Plug 'preservim/nerdtree'         " Example: NERDTree plugin
+Plug 'preservim/nerdtree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
