@@ -35,7 +35,7 @@ Plug 'ludovicchabant/vim-gutentags'
 
 call plug#end()
 
-nnoremap <C-p> :Files<Cr>
+nnoremap <C-p> :GFiles<Cr>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <F8> :TagbarToggle<CR>
 nnoremap <C-s> :w<CR>
