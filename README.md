@@ -4,6 +4,16 @@ This repository contains my Vim setup. The `setup_vim.sh` script takes care of c
 
 # Cheat Sheet
 
+## Undoing
+Undo:
+```vim
+u
+```
+Redo:
+```vim
+C-r
+```
+
 ## Search and Substitution
 Replace "foo" with "bar" across the whole file:
 ```vim
