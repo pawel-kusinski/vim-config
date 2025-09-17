@@ -11,7 +11,7 @@ u
 ```
 Redo:
 ```vim
-C-r
+Ctrl-r
 ```
 
 ## Search and Substitution
@@ -22,6 +22,12 @@ Replace "foo" with "bar" across the whole file:
 Replace "foo" with "bar" across the whole file and ask for confirmation before each replacement:
 ```vim
 :%s/foo/bar/gc
+```
+
+## File Navigation
+Toggle between current and last file:
+```vim
+Ctrl-^
 ```
 
 ## Spell Checking
