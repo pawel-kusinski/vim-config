@@ -1,5 +1,6 @@
 #!/bin/bash
 
+SKIP_DICT=false
 # Check for --no-dict flag
 for arg in "$@"; do
     if [ "$arg" == "--no-dict" ]; then
