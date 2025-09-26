@@ -59,3 +59,8 @@ cppreference
 tagline
 Gutentags
 spellfile
+enum
+spi
+str
+SpiErrStr
+SPI
