@@ -30,6 +30,19 @@ Toggle between current and last file:
 Ctrl-^
 ```
 
+## Tag Navigation
+Jump to the definition of a tag (e.g., function, variable):
+```vim
+Ctrl-]
+```
+Jump back to the previous location in the tag stack:
+```vim
+Ctrl-t
+```
+Toggle the Tagbar sidebar (preservim/tagbar plugin)
+```vim
+<F8>
+```
 ## Spell Checking
 Add good word to spellfile:
 ```vim
