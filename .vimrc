@@ -14,6 +14,9 @@ set spellfile=~/.vim/spell/en.utf-8.add
 
 set directory=~/.vim/swap//
 
+" For Airline colors
+set t_Co=256
+
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 
@@ -44,6 +47,10 @@ nnoremap <C-h> :set number! relativenumber!<CR>
 
 " Gutentags config
 let g:gutentags_cache_dir = expand('~/.cache/tags')
+
+" Airline 'arrows' and theme
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'dark'
 
 " Trim white spaces on save
 autocmd BufWritePre * %s/\s\+$//e
