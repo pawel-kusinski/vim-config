@@ -29,6 +29,10 @@ Toggle between current and last file:
 ```vim
 Ctrl-^
 ```
+Reload the current file from disk (discarding unsaved changes):
+```vim
+:e!
+```
 
 ## Tag Navigation
 Jump to the definition of a tag (e.g., function, variable):
