@@ -56,7 +56,8 @@ Mark bad word and save in spellfile:
 ```vim
 zw
 ```
-Suggest corrections:
+Suggest corrections for the word under the cursor
 ```vim
 z=
 ```
+
